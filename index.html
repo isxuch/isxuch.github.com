@@ -6,7 +6,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/jquery2.1.1.min.js"></script>
 
 <script src="js/aos.js"></script>
 
@@ -30,65 +30,65 @@
 
 <div class="top">
 	<div class="top_con clearfloat">
-	
+
 		<div class="top_con_l"><a><img src="images/logo.fw.png" /></a></div>
-		
+
 		<div class="top_con_r clearfloat">
-		
+
 			<ul class="top_ul clearfloat">
-			
+
 				<li><a>
-				
+
 					<p class="tpli_p1">首页</p>
-					
+
 					<p class="tpli_p2">HOME</p>
-				
+
 				</a></li>
-				
+
 				<li id="mmm"><a>
-				
+
 					<p class="tpli_p1">分类</p>
-					
+
 					<p class="tpli_p2">CLASSIFY</p>
-				
+
 				</a></li>
-				
+
 				<li id="hzk"><a>
-				
+
 					<p class="tpli_p1">合作</p>
-					
+
 					<p class="tpli_p2">COOPERTION</p>
-				
+
 				</a></li>
-				
+
 				<li id="dyh"><a>
-				
+
 					<p class="tpli_p1">订阅号</p>
-					
+
 					<p class="tpli_p2">SUBSCRIPTION</p>
-				
+
 				</a></li>
-			
+
 			</ul>
-		
+
 		</div>
-		
+
 		<div class="top_con_form">
-		
+
 			<form>
-			
+
 				<div class="top_form clearfloat">
-				
+
 					<div class="top_form_l"><input class="xu_input" type="text" name="" value="" placeholder="请输入关键词" /></div>
-					
+
 					<div class="top_form_r"></div>
-				
+
 				</div>
-			
+
 			</form>
-		
+
 		</div>
-		
+
 	</div>
 </div>
 
@@ -104,7 +104,7 @@
 		</div>
 		<!-- 如果需要分页器 -->
 		<div class="swiper-pagination"></div>
-		
+
 		<!-- 如果需要导航按钮 -->
 		<!-- <div class="swiper-button-prev"></div>
 		<div class="swiper-button-next"></div> -->
@@ -116,112 +116,112 @@
 	<div class="hz" id="hz">
 
 		<div class="hz_con clearfloat">
-		
+
 			<div class="hz_con_l">
-			
+
 				<div class="hz_con_l_t clearfloat">
-				
+
 					<ul class="hz_con_l_t_ul">
-					
+
 						<li><a>腾讯视频</a></li>
-						
+
 						<li><a>腾讯视频</a></li>
-						
+
 						<li><a>腾讯视频</a></li>
-						
+
 						<li><a>腾讯视频</a></li>
-						
+
 						<li><a>腾讯视频</a></li>
-						
+
 						<li><a>腾讯视频</a></li>
-						
+
 						<li><a>腾讯视频</a></li>
-						
+
 						<li><a>腾讯视频</a></li>
-						
+
 						<li><a>腾讯视频</a></li>
-						
+
 						<li><a>腾讯视频</a></li>
-						
+
 						<li><a>腾讯视频</a></li>
-						
+
 						<li><a>腾讯视频</a></li>
-					
+
 					</ul>
-				
+
 				</div>
-				
+
 				<div class="hz_con_l_b"><a>查看全部</a></div>
-			
+
 			</div>
-			
+
 			<div class="hz_con_r"></div>
-		
+
 		</div>
 
 	</div>
-	
+
 	<!-- 分类 -->
-	
+
 	<div class="guidang" id="kkk">
-	
+
 		<div class="guidang_con clearfloat">
-		
+
 			<ul class="guidang_ul">
-			
+
 				<li><a>分类一</a></li>
-				
+
 				<li><a>分类二</a></li>
-				
+
 				<li><a>分类三</a></li>
-				
+
 				<li><a>分类四</a></li>
-				
+
 				<li><a>分类五</a></li>
-			
+
 			</ul>
-		
+
 		</div>
-	
+
 	</div>
-	
+
 
 </div>
 
 <script>
 
 	var zddt_xx = document.getElementById('hzk');
-	
+
     var zddt_con = document.getElementById('hz');
 
     zddt_con.onmouseover = zddt_xx.onmouseover = function(){
 
 		$('body').animate({ scrollTop: 0 },200);
-	
+
 		$('.hz').stop().animate({top:'0px'},400);
     }
-	
+
 	zddt_con.onmouseout = zddt_xx.onmouseout = function(){
-			
+
 		$('.hz').stop().animate({top:'-300px'},400);
     }
-	
+
 	var mmm = document.getElementById('mmm');
-	
+
     var kkk = document.getElementById('kkk');
 
     kkk.onmouseover = mmm.onmouseover = function(){
 
 		$('body').animate({ scrollTop: 0 },200);
-	
+
 		$('#kkk').stop().animate({top:'0px'},400);
     }
-	
+
 	kkk.onmouseout = mmm.onmouseout = function(){
-			
+
 		$('#kkk').stop().animate({top:'-100px'},400);
     }
-	
+
 	$('#dyh').click(function(){
 		//iframe窗
 		layer.open({
@@ -243,380 +243,380 @@
 <div class="zhuti clearfloat" aos="fade-up" aos-anchor-placement="top-bottom">
 	<div class="zhuti_con">
 		<div class="zhuti_l">
-		
+
 			<ul class="zhuti_l_ul">
-			
+
 				<li class="fwxmm"><a>
-				
+
 					<div class="zhuti_li_top clearfloat">
-					
+
 						<div class="zhuti_li_top_l">
-						
+
 							<div class="zhuti_li_top_l_t">
-							
+
 								<h3>德媒称中国人是世界上最幸福的人:几年间生活质量飞跃</h3>
-							
+
 								<div class="animate_xx"></div>
-							
+
 							</div>
-							
+
 							<div class="zhuti_li_top_l_b clearfloat">
-							
+
 								<p class="zt_bp_01">2016-1-20</p>
-								
+
 								<p class="zt_bp_02">ISXUCH</p>
-								
+
 								<p class="zt_bp_03">评论100条</p>
-								
+
 								<p class="zt_bp_04">浏览720次</p>
-							
+
 							</div>
-						
+
 						</div>
-						
+
 						<div class="zhuti_li_top_r">
-						
+
 							<div class="fl_xx"><img src="images/nn.jpg" /></div>
-						
+
 						</div>
-					
+
 					</div>
-					
+
 					<div class="zhuti_li_bottom">
-					
+
 						<p>参考消息网1月20日报道 德媒称，长期的经济快速增长使得今天的中国人大多满足自己的经济状况并对未来表示乐观。德国《世界报》1月18日报道，“10年前这里什么都没有”，孙宁（音）边说边刹车转弯。驶下四环，他驾着自己的大众甲壳虫汽车进了一个居民小区。车窗外掠过一座座公寓楼。“几年前这里只是空地”，孙宁说。他的声音听起来很兴奋。</p>
-					
+
 					</div>
-				
+
 				</a></li>
-				
+
 				<li><a>
-				
+
 					<div class="zhuti_li_top clearfloat">
-					
+
 						<div class="zhuti_li_top_l">
-						
+
 							<div class="zhuti_li_top_l_t">
-							
+
 								<h3>德媒称中国人是世界上最幸福的人:几年间生活质量飞跃</h3>
-							
+
 								<div class="animate_xx"></div>
-							
+
 							</div>
-							
+
 							<div class="zhuti_li_top_l_b clearfloat">
-							
+
 								<p class="zt_bp_01">2016-1-20</p>
-								
+
 								<p class="zt_bp_02">ISXUCH</p>
-								
+
 								<p class="zt_bp_03">评论100条</p>
-								
+
 								<p class="zt_bp_04">浏览720次</p>
-							
+
 							</div>
-						
+
 						</div>
-						
+
 						<div class="zhuti_li_top_r">
-						
+
 							<div class="fl_xx"><img src="images/mm.jpg" /></div>
-						
+
 						</div>
-					
+
 					</div>
-					
+
 					<div class="zhuti_li_bottom">
-					
+
 						<p>参考消息网1月20日报道 德媒称，长期的经济快速增长使得今天的中国人大多满足自己的经济状况并对未来表示乐观。德国《世界报》1月18日报道，“10年前这里什么都没有”，孙宁（音）边说边刹车转弯。驶下四环，他驾着自己的大众甲壳虫汽车进了一个居民小区。车窗外掠过一座座公寓楼。“几年前这里只是空地”，孙宁说。他的声音听起来很兴奋。</p>
-					
+
 					</div>
-				
+
 				</a></li>
-				
+
 				<li><a>
-				
+
 					<div class="zhuti_li_top clearfloat">
-					
+
 						<div class="zhuti_li_top_l">
-						
+
 							<div class="zhuti_li_top_l_t">
-							
+
 								<h3>德媒称中国人是世界上最幸福的人:几年间生活质量飞跃</h3>
-							
+
 								<div class="animate_xx"></div>
-							
+
 							</div>
-							
+
 							<div class="zhuti_li_top_l_b clearfloat">
-							
+
 								<p class="zt_bp_01">2016-1-20</p>
-								
+
 								<p class="zt_bp_02">ISXUCH</p>
-								
+
 								<p class="zt_bp_03">评论100条</p>
-								
+
 								<p class="zt_bp_04">浏览720次</p>
-							
+
 							</div>
-						
+
 						</div>
-						
+
 						<div class="zhuti_li_top_r">
-						
+
 							<div class="fl_xx"><img src="images/mm.jpg" /></div>
-						
+
 						</div>
-					
+
 					</div>
-					
+
 					<div class="zhuti_li_bottom">
-					
+
 						<p>参考消息网1月20日报道 德媒称，长期的经济快速增长使得今天的中国人大多满足自己的经济状况并对未来表示乐观。德国《世界报》1月18日报道，“10年前这里什么都没有”，孙宁（音）边说边刹车转弯。驶下四环，他驾着自己的大众甲壳虫汽车进了一个居民小区。车窗外掠过一座座公寓楼。“几年前这里只是空地”，孙宁说。他的声音听起来很兴奋。</p>
-					
+
 					</div>
-				
+
 				</a></li>
-				
+
 				<li><a>
-				
+
 					<div class="zhuti_li_top clearfloat">
-					
+
 						<div class="zhuti_li_top_l">
-						
+
 							<div class="zhuti_li_top_l_t">
-							
+
 								<h3>德媒称中国人是世界上最幸福的人:几年间生活质量飞跃</h3>
-							
+
 								<div class="animate_xx"></div>
-							
+
 							</div>
-							
+
 							<div class="zhuti_li_top_l_b clearfloat">
-							
+
 								<p class="zt_bp_01">2016-1-20</p>
-								
+
 								<p class="zt_bp_02">ISXUCH</p>
-								
+
 								<p class="zt_bp_03">评论100条</p>
-								
+
 								<p class="zt_bp_04">浏览720次</p>
-							
+
 							</div>
-						
+
 						</div>
-						
+
 						<div class="zhuti_li_top_r">
-						
+
 							<div class="fl_xx"><img src="images/nn.jpg" /></div>
-						
+
 						</div>
-					
+
 					</div>
-					
+
 					<div class="zhuti_li_bottom">
-					
+
 						<p>参考消息网1月20日报道 德媒称，长期的经济快速增长使得今天的中国人大多满足自己的经济状况并对未来表示乐观。德国《世界报》1月18日报道，“10年前这里什么都没有”，孙宁（音）边说边刹车转弯。驶下四环，他驾着自己的大众甲壳虫汽车进了一个居民小区。车窗外掠过一座座公寓楼。“几年前这里只是空地”，孙宁说。他的声音听起来很兴奋。</p>
-					
+
 					</div>
-				
+
 				</a></li>
-				
+
 				<li><a>
-				
+
 					<div class="zhuti_li_top clearfloat">
-					
+
 						<div class="zhuti_li_top_l">
-						
+
 							<div class="zhuti_li_top_l_t">
-							
+
 								<h3>德媒称中国人是世界上最幸福的人:几年间生活质量飞跃</h3>
-							
+
 								<div class="animate_xx"></div>
-							
+
 							</div>
-							
+
 							<div class="zhuti_li_top_l_b clearfloat">
-							
+
 								<p class="zt_bp_01">2016-1-20</p>
-								
+
 								<p class="zt_bp_02">ISXUCH</p>
-								
+
 								<p class="zt_bp_03">评论100条</p>
-								
+
 								<p class="zt_bp_04">浏览720次</p>
-							
+
 							</div>
-						
+
 						</div>
-						
+
 						<div class="zhuti_li_top_r">
-						
+
 							<div class="fl_xx"><img src="images/mm.jpg" /></div>
-						
+
 						</div>
-					
+
 					</div>
-					
+
 					<div class="zhuti_li_bottom">
-					
+
 						<p>参考消息网1月20日报道 德媒称，长期的经济快速增长使得今天的中国人大多满足自己的经济状况并对未来表示乐观。德国《世界报》1月18日报道，“10年前这里什么都没有”，孙宁（音）边说边刹车转弯。驶下四环，他驾着自己的大众甲壳虫汽车进了一个居民小区。车窗外掠过一座座公寓楼。“几年前这里只是空地”，孙宁说。他的声音听起来很兴奋。</p>
-					
+
 					</div>
-				
+
 				</a></li>
-			
+
 			</ul>
-			
+
 			<div class="fenye">
-			
+
 				<a class="fenye_a1"><img src="images/jt02.png" /></a>
-				
+
 				<a class="fenye_a2"><img src="images/jt01.png" /></a>
-			
+
 			</div>
-			
+
 		</div>
 		<div class="zhuti_r" id="des">
-		
+
 			<div class="zhuti_r_top">
-			
+
 				<div class="swiper-container">
-				
+
 					<div class="swiper-wrapper">
-					
+
 						<div class="swiper-slide">
-						
+
 							<div class="zhuti_r_top_t"><img src="images/timg2.jpg" width="100%" /></div>
-						
+
 							<div class="zhuti_r_top_b">
-							
+
 								<div class="zhuti_r_top_b_t clearfloat">
-								
+
 									<div class="zhuti_r_top_b_t_l">2017-1-21</div>
-									
+
 									<div class="zhuti_r_top_b_t_r">111次</div>
-								
+
 								</div>
-								
+
 								<div class="zhuti_r_top_b_b">新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐</div>
-							
+
 							</div>
-							
+
 						</div>
-						
+
 						<div class="swiper-slide">
-						
+
 							<div class="zhuti_r_top_t"><img src="images/timg2.jpg" width="100%" /></div>
-						
+
 							<div class="zhuti_r_top_b">
-							
+
 								<div class="zhuti_r_top_b_t clearfloat">
-								
+
 									<div class="zhuti_r_top_b_t_l">2017-1-21</div>
-									
+
 									<div class="zhuti_r_top_b_t_r">111次</div>
-								
+
 								</div>
-								
+
 								<div class="zhuti_r_top_b_b">新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐</div>
-							
+
 							</div>
-							
+
 						</div>
-					
+
 					</div>
-				
+
 				</div>
-			
-				
-			
+
+
+
 			</div>
-			
+
 			<div class="zhuti_r_bottom">
-			
+
 				<div class="zhuti_r_bottom_t">最近帖子</div>
-				
+
 				<div class="zhuti_r_bottom_b">
-				
+
 					<ul class="zhuti_r_bottom_b_ul">
-					
+
 						<li class="clearfloat"><a>
-						
+
 							<div class="zjtz_l" style="background:url(images/tx.png) center no-repeat; background-size:cover;"></div>
-							
+
 							<div class="zjtz_r">
-							
+
 								<p>这篇文章很好很好！</p>
-								
+
 								<p class="zjtz_p2">2017-1-21</p>
-							
+
 							</div>
-						
+
 						</a></li>
-						
+
 						<li class="clearfloat"><a>
-						
+
 							<div class="zjtz_l" style="background:url(images/tx.png) center no-repeat; background-size:cover;"></div>
-							
+
 							<div class="zjtz_r">
-							
+
 								<p>这篇文章很好很好！</p>
-								
+
 								<p class="zjtz_p2">2017-1-21</p>
-							
+
 							</div>
-						
+
 						</a></li>
-						
+
 						<li class="clearfloat"><a>
-						
+
 							<div class="zjtz_l" style="background:url(images/tx.png) center no-repeat; background-size:cover;"></div>
-							
+
 							<div class="zjtz_r">
-							
+
 								<p>这篇文章很好很好！</p>
-								
+
 								<p class="zjtz_p2">2017-1-21</p>
-							
+
 							</div>
-						
+
 						</a></li>
-						
+
 						<li class="clearfloat"><a>
-						
+
 							<div class="zjtz_l" style="background:url(images/tx.png) center no-repeat; background-size:cover;"></div>
-							
+
 							<div class="zjtz_r">
-							
+
 								<p>这篇文章很好很好！</p>
-								
+
 								<p class="zjtz_p2">2017-1-21</p>
-							
+
 							</div>
-						
+
 						</a></li>
-						
+
 						<li class="clearfloat last_zjtz" ><a>
-						
+
 							<div class="zjtz_l" style="background:url(images/tx.png) center no-repeat; background-size:cover;"></div>
-							
+
 							<div class="zjtz_r">
-							
+
 								<p>这篇文章很好很好！</p>
-								
+
 								<p class="zjtz_p2">2017-1-21</p>
-							
+
 							</div>
-						
+
 						</a></li>
-					
+
 					</ul>
-				
+
 				</div>
-			
+
 			</div>
-		
+
 		</div>
 	</div>
 </div>
@@ -633,65 +633,65 @@
 <!-- 全部的合作 -->
 
 <div class="all_hz">
-	
+
 	<p class="hz_gb">关闭</p>
-	
+
 	<div class="hz_list">
-	
+
 		<ul class="hz_list_ul">
-		
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-			
+
 			<li><a>合作一</a></li>
-		
+
 		</ul>
-	
+
 	</div>
-	
+
 </div>
 
 
@@ -704,7 +704,7 @@
 
 <script src="js/swiper-3.4.0.jquery.min.js"></script>
 
-<script>        
+<script>
 var mySwiper = new Swiper('.swiper-container',{
 	effect : 'cube',
 	loop : true,
@@ -721,15 +721,15 @@ var mySwiper = new Swiper('.swiper-container',{
 var mySwiper = new Swiper ('.isxuch', {
 
 	pagination : '.swiper-pagination',
-	
+
 	loop : true,
-	
+
 	paginationClickable :true,
-	
+
 	//prevButton:'.swiper-button-prev',
-	
+
 	//nextButton:'.swiper-button-next',
-	
+
 	autoplay : 4000
 })
 
@@ -743,7 +743,7 @@ $('.hz_gb').click(function(){
 });
 
 //文章访问需要密码
-	
+
 $('.fwxmm').click(function(){
 	//iframe窗
 	layer.open({
@@ -757,7 +757,7 @@ $('.fwxmm').click(function(){
 	  content:'<div class="ewm ewm_02"><h3>输入密码</h3><form><div><input class="srmm" type="password" name="" value="" /></div><div class="mm_butt clearfloat"><div class="mm_butt_l">确定</div><div class="mm_butt_r">取消</div></div><div class="wzfwmm">注：关注博主微信订阅号，发送“密码”至公众号即可获得该篇文章访问密码</div></form></div>'//iframe的url，no代表不显示滚动条
 	});
 });
-       
+
 </script>
 <script>
     var des = document.getElementById('des');
@@ -774,7 +774,7 @@ $('.fwxmm').click(function(){
             // console.log('该处理了');
             des.style.top = top - 350 + 'px';
         }
-		
+
 		else{
             des.style.top = '0px';
         };
