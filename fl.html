@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="js/aos.js"></script>
+
+<script src="layer-v2.1/layer.js"></script>
+
+<!-- <script src="js/highlight.min.js"></script> -->
+
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+<link href="css/aos.css" type="text/css" rel="stylesheet" />
+
+<link href="css/swiper-3.4.0.min.css" type="text/css" rel="stylesheet">
+
+<title>分类</title>
+
+</head>
+
+<body>
+
+<!--头部-->
+
+<div class="top">
+	<div class="top_con clearfloat">
+	
+		<div class="top_con_l"><a><img src="images/logo.fw.png" /></a></div>
+		
+		<div class="top_con_r clearfloat">
+		
+			<ul class="top_ul clearfloat">
+			
+				<li><a>
+				
+					<p class="tpli_p1">首页</p>
+					
+					<p class="tpli_p2">HOME</p>
+				
+				</a></li>
+				
+				<li id="mmm"><a>
+				
+					<p class="tpli_p1">分类</p>
+					
+					<p class="tpli_p2">CLASSIFY</p>
+				
+				</a></li>
+				
+				<li id="hzk"><a>
+				
+					<p class="tpli_p1">合作</p>
+					
+					<p class="tpli_p2">COOPERTION</p>
+				
+				</a></li>
+				
+				<li id="dyh"><a>
+				
+					<p class="tpli_p1">订阅号</p>
+					
+					<p class="tpli_p2">SUBSCRIPTION</p>
+				
+				</a></li>
+			
+			</ul>
+		
+		</div>
+		
+		<div class="top_con_form">
+		
+			<form>
+			
+				<div class="top_form clearfloat">
+				
+					<div class="top_form_l"><input class="xu_input" type="text" name="" value="" placeholder="请输入关键词" /></div>
+					
+					<div class="top_form_r"></div>
+				
+				</div>
+			
+			</form>
+		
+		</div>
+		
+	</div>
+</div>
+
+<!-- banner -->
+
+<div class="banner" style="overflow:hidden">
+
+	<div class=" isxuch">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" style="background:url(images/banner.fw.png) center no-repeat;"></div>
+			<div class="swiper-slide" style="background:url(images/banner.fw.png) center no-repeat;"></div>
+			<div class="swiper-slide" style="background:url(images/banner.fw.png) center no-repeat;"></div>
+		</div>
+		<!-- 如果需要分页器 -->
+		<div class="swiper-pagination"></div>
+		
+		<!-- 如果需要导航按钮 -->
+		<!-- <div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div> -->
+
+	</div>
+
+	<!-- 合作 -->
+
+	<div class="hz" id="hz">
+
+		<div class="hz_con clearfloat">
+		
+			<div class="hz_con_l">
+			
+				<div class="hz_con_l_t clearfloat">
+				
+					<ul class="hz_con_l_t_ul">
+					
+						<li><a>腾讯视频</a></li>
+						
+						<li><a>腾讯视频</a></li>
+						
+						<li><a>腾讯视频</a></li>
+						
+						<li><a>腾讯视频</a></li>
+						
+						<li><a>腾讯视频</a></li>
+						
+						<li><a>腾讯视频</a></li>
+						
+						<li><a>腾讯视频</a></li>
+						
+						<li><a>腾讯视频</a></li>
+						
+						<li><a>腾讯视频</a></li>
+						
+						<li><a>腾讯视频</a></li>
+						
+						<li><a>腾讯视频</a></li>
+						
+						<li><a>腾讯视频</a></li>
+					
+					</ul>
+				
+				</div>
+				
+				<div class="hz_con_l_b"><a>查看全部</a></div>
+			
+			</div>
+			
+			<div class="hz_con_r"></div>
+		
+		</div>
+
+	</div>
+	
+	<!-- 分类 -->
+	
+	<div class="guidang" id="kkk">
+	
+		<div class="guidang_con clearfloat">
+		
+			<ul class="guidang_ul">
+			
+				<li><a>分类一</a></li>
+				
+				<li><a>分类二</a></li>
+				
+				<li><a>分类三</a></li>
+				
+				<li><a>分类四</a></li>
+				
+				<li><a>分类五</a></li>
+			
+			</ul>
+		
+		</div>
+	
+	</div>
+	
+
+</div>
+
+<script>
+
+	var zddt_xx = document.getElementById('hzk');
+	
+    var zddt_con = document.getElementById('hz');
+
+    zddt_con.onmouseover = zddt_xx.onmouseover = function(){
+
+		$('body').animate({ scrollTop: 0 },200);
+	
+		$('.hz').stop().animate({top:'0px'},400);
+    }
+	
+	zddt_con.onmouseout = zddt_xx.onmouseout = function(){
+			
+		$('.hz').stop().animate({top:'-300px'},400);
+    }
+	
+	var mmm = document.getElementById('mmm');
+	
+    var kkk = document.getElementById('kkk');
+
+    kkk.onmouseover = mmm.onmouseover = function(){
+
+		$('body').animate({ scrollTop: 0 },200);
+	
+		$('#kkk').stop().animate({top:'0px'},400);
+    }
+	
+	kkk.onmouseout = mmm.onmouseout = function(){
+			
+		$('#kkk').stop().animate({top:'-100px'},400);
+    }
+	
+	$('#dyh').click(function(){
+		//iframe窗
+		layer.open({
+		  type: 2,
+		  title: false,
+		  closeBtn: 0, //不显示关闭按钮
+		  shift:4,
+		  area: ['500px', '400px'],
+		  scrollbar:false,
+		  shadeClose:true,
+		  content:[ 'ewm.html' ]//iframe的url，no代表不显示滚动条
+		});
+	
+	});
+
+</script>
+
+<!-- 主体内容 -->
+
+<div class="zhuti clearfloat" aos="fade-up" aos-anchor-placement="top-bottom">
+	<div class="zhuti_con">
+		<div class="zhuti_l zhuti_l_02" id="bbb">
+
+			<div class="zhuti_r_top">
+			
+				<div class="swiper-container">
+				
+					<div class="swiper-wrapper">
+					
+						<div class="swiper-slide">
+						
+							<div class="zhuti_r_top_t"><img src="images/timg2.jpg" width="100%" /></div>
+						
+							<div class="zhuti_r_top_b">
+							
+								<div class="zhuti_r_top_b_t clearfloat">
+								
+									<div class="zhuti_r_top_b_t_l">2017-1-21</div>
+									
+									<div class="zhuti_r_top_b_t_r">111次</div>
+								
+								</div>
+								
+								<div class="zhuti_r_top_b_b">新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐</div>
+							
+							</div>
+							
+						</div>
+						
+						<div class="swiper-slide">
+						
+							<div class="zhuti_r_top_t"><img src="images/timg2.jpg" width="100%" /></div>
+						
+							<div class="zhuti_r_top_b">
+							
+								<div class="zhuti_r_top_b_t clearfloat">
+								
+									<div class="zhuti_r_top_b_t_l">2017-1-21</div>
+									
+									<div class="zhuti_r_top_b_t_r">111次</div>
+								
+								</div>
+								
+								<div class="zhuti_r_top_b_b">新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐新年快乐</div>
+							
+							</div>
+							
+						</div>
+					
+					</div>
+				
+				</div>
+			
+				
+			
+			</div>
+			
+			<div class="zhuti_r_bottom">
+			
+				<div class="zhuti_r_bottom_t">最近帖子</div>
+				
+				<div class="zhuti_r_bottom_b">
+				
+					<ul class="zhuti_r_bottom_b_ul">
+					
+						<li class="clearfloat"><a>
+						
+							<div class="zjtz_l" style="background:url(images/tx.png) center no-repeat; background-size:cover;"></div>
+							
+							<div class="zjtz_r">
+							
+								<p>这篇文章很好很好！</p>
+								
+								<p class="zjtz_p2">2017-1-21</p>
+							
+							</div>
+						
+						</a></li>
+						
+						<li class="clearfloat"><a>
+						
+							<div class="zjtz_l" style="background:url(images/tx.png) center no-repeat; background-size:cover;"></div>
+							
+							<div class="zjtz_r">
+							
+								<p>这篇文章很好很好！</p>
+								
+								<p class="zjtz_p2">2017-1-21</p>
+							
+							</div>
+						
+						</a></li>
+						
+						<li class="clearfloat"><a>
+						
+							<div class="zjtz_l" style="background:url(images/tx.png) center no-repeat; background-size:cover;"></div>
+							
+							<div class="zjtz_r">
+							
+								<p>这篇文章很好很好！</p>
+								
+								<p class="zjtz_p2">2017-1-21</p>
+							
+							</div>
+						
+						</a></li>
+						
+						<li class="clearfloat"><a>
+						
+							<div class="zjtz_l" style="background:url(images/tx.png) center no-repeat; background-size:cover;"></div>
+							
+							<div class="zjtz_r">
+							
+								<p>这篇文章很好很好！</p>
+								
+								<p class="zjtz_p2">2017-1-21</p>
+							
+							</div>
+						
+						</a></li>
+						
+						<li class="clearfloat last_zjtz" ><a>
+						
+							<div class="zjtz_l" style="background:url(images/tx.png) center no-repeat; background-size:cover;"></div>
+							
+							<div class="zjtz_r">
+							
+								<p>这篇文章很好很好！</p>
+								
+								<p class="zjtz_p2">2017-1-21</p>
+							
+							</div>
+						
+						</a></li>
+					
+					</ul>
+				
+				</div>
+			
+			</div>
+			
+		</div>
+		
+		<div class="zhuti_r zhuti_r_02">
+		
+			<div class="content_title">
+			
+				<h3>最后就是错在自己太老了</h3>
+				
+				<span>发布时间：2017-2-10</span>
+			
+			</div>
+			
+			<div class="content_con">
+			
+				对于创业之道、如何做产品等四个问题，马化腾是这么看的
+
+ 这不是马化腾的一次演讲，而是作者把他近期的公开采访、演讲都综合起来，得出一篇文章。涉及创业公司的生存之道、QQ迅速发展起来的背后原因、推出微信前后他幕后的思考、他做产品的一手实操方法，对创业者们或有启发。
+
+1、创业维艰
+
+我在1998年注册了腾讯公司，当时父母都没有想到，他们说：“你这个书呆子还可以去开公司啊。”所以他们建议我找合伙人一起做，可以弥补自身的缺陷。
+
+我对产品比较在行，当时懂计算机的人不太懂通信，懂通信的人不太懂计算机，我刚好在这个跨界中间。张志东绝对是学霸，实践能力、工程能力很强。陈一丹是政府部门出来的，对政府接待、行政、法律很了解。曾李青长得就像老板，出去别人握手都先跟他握。我的名片只写工程师，不敢写总经理，怕人家觉得你们这公司玄乎了。
+
+当时在深圳，像腾讯这样的公司有上百家。我们的主要业务是为深圳电信、深圳联通和一些寻呼台做项目，副产品是QQ。QQ最早的名字叫「网络寻呼机」，最早的图标就是一个「BP机」。我们开发出来这个产品是想卖给别的运营商，可是价格一直谈不拢。
+
+产品在自己的手上，用户又疯涨，运营QQ所需的投入越来越大，没钱买服务器，这逼得我们很早就要想怎么有造血的能力。我们夜以继日地接一些琐碎活儿，为的是能够赚到一点点钱，用来养活QQ，比如我们要向通讯局交服务器托管费等。
+
+此外，我当时也四处去筹钱。找银行，银行说没听说过凭
+
+	<img src="images/timg2.jpg" />
+	
+<pre class="pre_xx">
+require("./style.css") // 载入 style.css
+document.write('haorooms webpack demo works.')
+document.write(require('./module.js'))		
+</pre>
+
+「注册用户数量」可以办抵押贷款的；与国内投资商谈，对方关心的大多是腾讯有多少台电脑和其他固定资产。1999年下半年，我拿着改了6个版本、20多页的商业计划书开始寻找国外风险投资，最后碰到了IDG和盈科数码，他们给了我们400万美元。有了这笔资金，公司就买了20万兆的IBM服务器，那时放在桌上，心里别提有多美了。
+
+2001年的时候，前几名的互联网公司都上市赚钱了，QQ注册用户已经达到2亿，但缺乏现成的收费渠道，我们心里也很着急。这时候中国移动推出的「移动梦网」改变了我们的生存状态。我想到通过与运营商走二八分账的协议实现业务增长（运营商20%，腾讯80%），2002年，移动QQ占到腾讯公司整体业务收入的70%。
+
+之后我们继续以较低的成本开展新业务，并且在新业务和功能方面，通过即时通讯增加客户粘性，而不是分散精力，因为这是我们和其他国外工具竞争的筹码。
+
+那时候MSN很强势，基本上大家认为QQ是死定的，只是什么时候死而已。但我们针对国内网络结构做了大量的优化。我们传文件很快，有聊天室，包括我们的头像是个性化的，口碑就这样建立起来了。
+
+讲这段历史，其实是为了说创业最开始的第一步是要生存，先能生存下来，但这也是最难的。你要创业的话，第一个想法是第一年的工资怎么办，你第一年的收入怎么着至少房租得交吧?房租水电你能不能挣回来，这是一个很基本的东西，所以当时没有想那么多什么领导力的，因为这个公司能不能走下去都很难说，小企业的成功概率算下来是很低的。现在创业的这个条件比当年好的太多太多了，但是因为门槛低了，竞争也更加激烈。
+
+这里我也有两点建议供你参考：
+
+1）、创业初期一定要集中资源解决一个用户痛点。
+
+我几乎每周都会收到一些邮件，“马总，我有一个很好的想法，可以帮你创造100亿的利润，但我要面谈。”一般这些人想法都太大了，其实创业者就要将自己的想法聚焦一些。
+
+2）、留意跨界所产生的机会。
+
+现在我们提互联网+，谈论更多的是两个领域之间是否存在机会，那是蓝海，跨界的部分如果你两边都懂，就有很大机会。
+
+
+
+			<p class="ckyw"><a href="http://www.baidu.com">查看原文</a></p>	
+			
+			</div>
+			
+			<!-- 分享 -->
+			
+			<div class="bdfx">
+				<div class="bdsharebuttonbox">
+					<a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+				</div>
+				<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+			</div>
+			
+			<!-- 打赏 -->
+			
+			<div class="dashang">
+			
+				<div class="dashang_top">非常喜欢这篇文章，给博主打赏-->></div>
+				
+				<div class="dashang_bottom clearfloat">
+				
+					<div class="dashang_bottom_l">
+					
+						<img src="images/dyh.jpg" />
+						
+						<p>支付宝</p>
+					
+					</div>
+					
+					<div class="dashang_bottom_r"><img src="images/dyh.jpg" />
+					
+						<p>微信</p>
+					
+					</div>
+				
+				</div>
+			
+			</div>
+			
+			<!-- 上一篇、下一篇 -->
+			
+			<div class="sxp">
+				
+				<p>上一篇：我是上一篇标题</p>
+				
+				<p>上一篇：我是下一篇标题</p>
+			
+			</div>
+			
+			<!-- <div class="fenye">
+			
+				<a class="fenye_a1"><img src="images/jt02.png" /></a>
+				
+				<a class="fenye_a2"><img src="images/jt01.png" /></a>
+			
+			</div> -->
+		
+		</div>
+	</div>
+</div>
+
+<!-- 底部导航 -->
+
+<div class="db_nav">
+	<div class="db_nav_con">
+		<p>ISXUCH版权所有    备案号：粤2017-1-19003</p>
+		<p>本博客的所有原创作品采用“知识共享”署名-非商业性使用-相同方式共享2.5协议进行许可 本站由七牛提供云存储，阿里云提供计算与安全服务</p>
+	</div>
+</div>
+
+<!-- 全部的合作 -->
+
+<div class="all_hz">
+	
+	<p class="hz_gb">关闭</p>
+	
+	<div class="hz_list">
+	
+		<ul class="hz_list_ul">
+		
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+			
+			<li><a>合作一</a></li>
+		
+		</ul>
+	
+	</div>
+	
+</div>
+
+
+<script>
+	AOS.init({
+		easing: 'ease-out-back',
+		duration: 1000
+	});
+</script>
+
+<script src="js/swiper-3.4.0.jquery.min.js"></script>
+
+<script>        
+var mySwiper = new Swiper('.swiper-container',{
+	effect : 'cube',
+	loop : true,
+	//autoplay : 3000,
+	speed:1000,
+	cube: {
+	  slideShadows: true,
+	  shadow: true,
+	  shadowOffset: 0,
+	  shadowScale: 0.6
+	}
+})
+
+var mySwiper = new Swiper ('.isxuch', {
+
+	pagination : '.swiper-pagination',
+	
+	loop : true,
+	
+	paginationClickable :true,
+	
+	//prevButton:'.swiper-button-prev',
+	
+	//nextButton:'.swiper-button-next',
+	
+	autoplay : 4000
+})
+
+//全部合作
+
+$('.hz_con_l_b').click(function(){
+	$('.all_hz').animate({right:'0px'},'fast');
+});
+$('.hz_gb').click(function(){
+	$('.all_hz').animate({right:'-200px'},'fast');
+});
+       
+</script>
+<script>
+    var des = document.getElementById('bbb');
+    var yTop = des.offsetTop;   //目标div距离浏览器顶部的距离
+    // alert(yTop);
+
+    window.onscroll = function(){
+        //获取滚动条的高度
+        var top = document.body.scrollTop || document.documentElement.scrollTop;
+
+        //document.title = top;
+
+        if (top >= 350) {
+            // console.log('该处理了');
+            des.style.top = top - 350 + 'px';
+        }
+		
+		else{
+            des.style.top = '0px';
+        };
+    }
+	mm=1;
+	$('.dashang').click(function(){
+		if(mm==1){
+				$('.dashang_bottom').slideToggle(300,function(){
+				$('.dashang_bottom_r').css('marginLeft','50px');
+			});
+			mm=2;
+			return false;
+		}
+		if(mm==2){
+				$('.dashang_bottom').slideToggle(300,function(){
+				$('.dashang_bottom_r').css('marginLeft','-150px');
+			});
+			mm=1;
+			return false;
+		}
+		
+	});
+	
+</script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,30 @@
+{
+    "status": 1,
+    "msg": "",
+    "title": "JSON请求的相册",
+    "id": 8,
+    "start": 0,
+    "data": [
+        {
+            "alt": "图片说明",
+            "pid": 109,
+            "src": "http://www.ymfarms.com/file/upload/201607/15/155720714959.jpg",
+            "thumb": ""
+        },
+		
+		 {
+            "alt": "图片说明",
+            "pid": 109,
+            "src": "http://img1.imgtn.bdimg.com/it/u=651288237,2935444181&fm=214&gp=0.jpg",
+            "thumb": ""
+        },
+		
+		 {
+            "alt": "图片说明",
+            "pid": 109,
+            "src": "images/timg2.jpg",
+            "thumb": ""
+        }
+        
+    ]
+}
